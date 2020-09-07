@@ -12,6 +12,10 @@ body {
 .navigation li {
     font-weight: 100;
     letter-spacing: 2px;
+    padding:10px;
+}
+.global{
+    display:none;
 }
 
 .navigation  li.current {
@@ -26,6 +30,7 @@ body {
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    height:350px;
 }
 
 h1 {
@@ -37,12 +42,21 @@ h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
+    border-style:solid;
 }
 
 #main {
     padding: 40px;
     text-align: center;
+    margin:0px auto;
+    width:500px;
+    height:800px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+#main::-webkit-scrollbar {
+        display: none;
+    }
 
 h2 {
     padding: 20px 10px;
@@ -56,6 +70,9 @@ h3 {
     font-size: 14px;
     line-height: 48px;
     text-align: center;
+    border-style:dashed;
+    margin:30px 20px 30px 20px;
+    padding:20px 30px 20px 30px;
 }
 
 p {
@@ -63,10 +80,12 @@ p {
     color: grey;
     font-size: 16px;
     line-height: 1.5em;
+    margin-top:40px;
 }
 
 .pull-quote {
-
+    width:400px;
+    margin:0px auto;
 }
 
 .byline {
@@ -92,6 +111,8 @@ p {
     color: white;
     display: inline-block;
     text-decoration: none;
+    padding:14px;
+    margin:10px;
 }
 
 .share a:hover {
